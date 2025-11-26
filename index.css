@@ -1,0 +1,373 @@
+body {
+    background-image: url('/imagens/backgroundTempfy.png');
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    margin: 0svb;
+    overflow: none;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 0;
+    font-style: normal;
+}
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.jaro-uniquifier {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.league-spartan-uniquifier {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sugo-Pro-Display-Bold-trial;
+    src: url(/fontes/Sugo-Pro-Classic-Bold-trial.ttf)
+}
+
+.navBar {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    background-color: #fff;
+    border-radius: 50px;
+    gap: 5%;
+    padding: 0.3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.logo {
+    width: 4%;
+    height: auto;
+    margin-left: 2%;
+}
+
+.botoes {
+    margin-left: 63%;
+    display: flex;
+    font-size: 55%;
+    font-family: "Poppins", sans-serif;
+    gap: 8%;
+    color: #315483;
+}
+
+.botoes h1 {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.botoes h1:hover {
+    color: #7ba4d9;
+    transform: scale(1.1);
+}
+
+.botoes h1:active {
+    transform: scale(1);
+}
+
+.perfil {
+    width: 3.5%;
+    height: auto;
+    margin-right: 1%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+}
+
+.perfil:active {
+    transform: scale(1);
+}
+
+.inicio {
+    border-top: solid 4px #6189bd;
+    border-bottom: solid 6px #6189bd;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/imagens/tempfyImg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.areaTitulo {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.titulo {
+    font-family: Sugo-Pro-Display-Bold-trial;
+    font-size: 900%;
+    color: #102257;
+}
+
+.bordao {
+    font-family: "League Spartan", sans-serif;
+    color: #3a4f8b;
+    margin-top: -7%;
+    border: solid 0px #000;
+}
+
+.nossosServicos {
+    display: flex;
+    border: solid 0px #000;
+    gap: 6%;
+    margin-top: 3%;
+}
+
+.imagemServicos {
+    width: 38%;
+    margin-left: 6%;
+}
+
+.areaTextosNossosServicos {
+    border: solid 0px #000;
+    width: 43%;
+}
+
+.tituloServicos {
+    text-align: center;
+    font-family: "Jaro", sans-serif;
+    font-size: 350%;
+    font-weight: 50;
+}
+
+.textoServicos {
+    font-family: "Inter", sans-serif;
+    font-size: 140%;
+    text-align: left;
+    width: 75%;
+    padding-left: 15%;
+}
+
+.planos {
+    border: solid 0px #000;
+    font-family: "Inter", sans-serif;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.tituloPlanos {
+    text-align: center;
+    font-family: "Jaro", sans-serif;
+    font-size: 350%;
+    font-weight: 50;
+    margin-bottom: 5%;
+}
+
+.areaPlanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 8%;
+}
+
+.plano1,
+.plano2 {
+    width: 40%;
+    background-color: #144B91CF;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plano1:hover,
+.plano2:hover {
+    transform: scale(1.02);
+}
+
+.plano1:active,
+.plano2:active {
+    transform: scale(1);
+}
+
+.areaBrancaPlano1,
+.areaBrancaPlano2 {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+    border-radius: 15px;
+    box-shadow: inset 0 3px 6px #a1a1a1;
+}
+
+.titulPlano1,
+.titulPlano2 {
+    padding-left: 4%;
+    font-size: 150%;
+}
+
+.precoPlano1,
+.precoPlano2 {
+    padding-left: 4%;
+}
+
+.textoPlano1,
+.textoPlano2 {
+    color: #fff;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+.sobreNos {
+    width: 100%;
+    height: 100vh;
+    border: solid 0px #000;
+    background-image: url('/imagens/tempfyEmpresa.png');
+    background-size: 101%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-top: solid 4px #6189bd;
+    border-bottom: solid 4px #6189bd;
+}
+
+.areaSobreNos {
+    color: #fff;
+    border: solid 0px #000;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 35%;
+    height: 100vh;
+    margin-left: 57%;
+}
+
+.tituloSobreNos {
+    text-align: center;
+    font-family: "Jaro", sans-serif;
+    font-weight: 50;
+    font-size: 350%;
+    padding-top: 20%;
+}
+
+.textoSobreNos {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 170%;
+    font-weight: 350;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 8%;
+}
+
+.inputs {
+    border: solid 0px #000;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 4%;
+}
+
+.nomeEmail {
+    display: flex;
+    border: solid 0px #000;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 3%;
+}
+
+.inputNome,
+.inputEmail {
+    width: 40%;
+    height: 4vh;
+}
+
+.areaTextoMensagem {
+    width: 84%;
+    margin-top: 2%;
+    padding-bottom: 8%;
+    margin-left: 7.5%;
+    resize: none;
+}
+
+.enviar {
+    width: 85%;
+    margin-left: 7.5%;
+    height: 5vh;
+    background-color: #2F65A3;
+    transition: 0.3s;
+}
+
+.enviar:hover {
+    background-color: rgb(104, 128, 201);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.enviar:active{
+    transform: scale(1);
+}
+
+.enviar h1 {
+    font-size: 100%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding-top: 1.7%;
+    font-weight: 250;
+}
+
+.icones {
+    border: solid 0px #000;
+    width: 40%;
+    align-content: center;
+    margin-right: 5%;
+}
+
+.localizacao,
+.telefone,
+.whatsapp,
+.email {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.localizacao img,
+.telefone img,
+.whatsapp img,
+.email img {
+    width: 7%;
+}
+
+.localizacao h1,
+.telefone h1,
+.whatsapp h1,
+.email h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    padding-left: 2%;
+    font-size: 120%;
+}

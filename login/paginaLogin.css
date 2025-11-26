@@ -1,0 +1,140 @@
+body {
+    background-image: url(../imagens/tempfyImg.png);
+    background-size: 114%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    margin: 0svb;
+    overflow: none;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 0;
+    font-style: normal;
+}
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.jaro-uniquifier {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.league-spartan-uniquifier {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sugo-Pro-Display-Bold-trial;
+    src: url(/fontes/Sugo-Pro-Classic-Bold-trial.ttf)
+}
+
+.voltar {
+    width: 6%;
+    height: 5vh;
+    border-radius: 7px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    background-color: #dedede;
+    transform: scale(1.05);
+}
+
+.voltar:active {
+    transform: scale(1);
+}
+
+.areaLogin {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+    width: 35%;
+    height: 75vh;
+    border: solid px #000;
+    margin-top: 5%;
+    border-radius: 20px;
+
+    background-color: #7C9EBF80;
+}
+
+.senha, .usuario {
+    width: 60%;
+    height: 4vh;
+    margin-top: 5%;
+    border-radius: 8px;
+    border: none;
+}
+
+.titulo {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    margin-top: 10%;
+    font-size: 250%;
+    padding-top: 8%;
+}
+
+.areaLogin div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 10%;
+}
+
+.areaLogin div button {
+    background-color: #144B91;
+    width: 30%;
+    height: 6vh;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 90%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.areaLogin div button:hover {
+    background-color: #1b5fba;
+    transform: scale(1.03);
+}
+
+.areaLogin div button:active {
+    transform: scale(1);
+}
+
+.SemConta {
+    font-size: 100%;
+    margin-left: -26%;
+    font-family: "Poppins", sans-serif;
+}
+
+.SemConta a{
+    color: #fff;
+}
+
+.nome{
+    margin-top: 13%;
+    width: 60%;
+    height: 4vh;
+    border-radius: 8px;
+    border: none;
+}

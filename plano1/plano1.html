@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPFY</title>
+
+    <link rel="stylesheet" href="plano1.css">
+    <script src="plano1.js" defer></script>
+</head>
+
+<body>
+    <section class="navBar">
+        <img class="logo" src="/imagens/tempfyLogo.png">
+
+        <div class="botoes">
+            <h1 onclick="home()">Home</h1>
+        </div>
+
+        <img onclick="login()" class="perfil" src="/imagens/iconePerfil.svg">
+    </section>
+
+    <section class="areaProduto">
+        <div class="imagem">
+            <img class="imgProduto" src="../imagens/tempfyProduto2.png">
+        </div>
+
+        <div class="infoProduto">
+            <div class="areaTextosProduto">
+                <h1 class="plano1">Plano 1</h1>
+                <span id="preco" class="preco">R$ 50,00</span>
+
+                <p class="textoProduto1">Neste plano, o cliente adquire um pacote completo que inclui um aparelho de
+                    monitoramento de temperatura modelo Temp Monitor, acompanhado de todos os serviços necessários para
+                    colocá-lo em funcionamento. </p>
+            </div>
+
+            <div class="comprarQuantidade">
+                <div onclick="pagamento()" class="botaoComprar">Comprar</div>
+
+                <div class="contador">
+                    <button class="botaoContador" id="menos">-</button>
+
+                    <span id="valor">1</span>
+
+                    <button class="botaoContador" id="mais">+</button>
+                </div>
+            </div>
+
+            <details>
+                <summary class="formasPagamentos">Formas de pagamento</summary>
+                <ul class="listaPagamentos">
+                    <li>Pix</li>
+                    <li>Cratão de débito</li>
+                    <li>Cratão de crédito</li>
+                </ul>
+            </details>
+
+        </div>
+    </section>
+</body>
+
+</html>

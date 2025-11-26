@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPFY</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <section class="navBar">
+        <img class="logo" src="/imagens/tempfyLogo.png">
+
+        <div class="botoes">
+            <h1 onclick="home()">Home</h1>
+            <h1 onclick="irParaPlanos()">Planos</h1>
+            <h1 onclick="irParaSobreNos()">Tempfy</h1>
+            <h1 onclick="irParaContato()">Contato</h1>
+        </div>
+
+        <img onclick="login()" class="perfil" src="/imagens/iconePerfil.svg">
+    </section>
+
+    <section class="inicio">
+        <div class="areaTitulo">
+            <h1 class="titulo">TEMPFY</h1>
+            <h1 class="bordao">A temperatura ideal para você</h1>
+        </div>
+    </section>
+
+    <section class="nossosServicos">
+        <img class="imagemServicos" src="/imagens/tempfyProduto.png">
+
+        <div class="areaTextosNossosServicos">
+            <h1 class="tituloServicos"><u>Nossos Serviços</u></h1>
+            <p class="textoServicos">A Tempfy é uma empresa que tem como objetivo auxiliar seus clientes a monitorarem a temperatura de seus aparelhos eletrônicos, evitando possíveis problemas com superaquecimento. Nós fazemos isso através da venda de nossos Temp Monitor’s, que monitoram a temperatura de aparelhos eletrônicos e os desligam quando eles atingem temperaturas muito altas. Nós também desponibilizamos um aplicativo para nossos clientes, para que eles possam controlar seus Temp Monitors</p>
+        </div>
+    </section>
+
+    <section id="planos" class="planos">
+        <h1 class="tituloPlanos"><u>Planos</u></h1>
+
+        <div class="areaPlanos">
+            <div class="plano1" onclick="irPlanoUm()">
+                <div class="areaBrancaPlano1">
+                    <h1 class="titulPlano1">Plano 1</h1>
+                    <h1 class="precoPlano1">R$ 50,00</h1>
+                </div>
+                <p class="textoPlano1">Neste plano, o cliente adquire um pacote completo que inclui um aparelho de monitoramento de temperatura modelo Temp Monitor, acompanhado de todos os serviços necessários para colocá-lo em funcionamento. O plano abrange a entrega do equipamento diretamente no endereço indicado pelo cliente, bem como a instalação realizada por nossa equipe técnica especializada, garantindo que o dispositivo esteja corretamente configurado e pronto para uso.</p>
+            </div>
+
+
+            <div class="plano2" onclick="irPlanoDois()">
+                <div class="areaBrancaPlano2">
+                    <h1 class="titulPlano2">Plano 2</h1>
+                    <h1 class="precoPlano2">R$ 70,00</h1>
+                </div>
+                <p class="textoPlano2">Neste plano, o cliente adquire um pacote completo que inclui um aparelho de monitoramento de temperatura modelo Temp Monitor, acompanhado de todos os serviços necessários para colocá-lo em funcionamento. O plano abrange a entrega do equipamento diretamente no endereço indicado pelo cliente, bem como a instalação realizada por nossa equipe técnica especializada, garantindo que o dispositivo esteja corretamente configurado e pronto para uso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tempfy" class="sobreNos">
+        <div class="areaSobreNos">
+            <h1 class="tituloSobreNos"><u>Sobre nós</u></h1>
+
+            <p class="textoSobreNos">A Tempfy surgiu de uma experiência real. Enquanto trabalhavam em uma sorveteria, nossos fundadores enfrentaram prejuízos quando o congelador apresentou falhas sem aviso. Dessa necessidade nasceu a ideia de criar monitores de temperatura inteligentes, capazes de identificar e alertar variações críticas antes que causem danos. Hoje, oferecemos soluções confiáveis para computadores, geladeiras e outros aparelhos, garantindo segurança e tranquilidade aos nossos clientes.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="inputs">
+            <div class="nomeEmail">
+                <input class="inputNome" type="text" placeholder="Nome">
+                <input class="inputEmail" type="email" placeholder="Email">
+            </div>
+
+            <textarea class="areaTextoMensagem" placeholder="Sua mensagem..."></textarea>
+            <div class="enviar"><h1>Enviar</h1></div>
+        </div>
+
+        <div class="icones">
+            <div class="localizacao">
+                <img src="/imagens/imgLocalizacao.svg">
+                <h1>Servidão Vidal ramos Centro Norte, Florianópolis, SC</h1>
+            </div>
+            
+            <div class="telefone">
+                <img src="/imagens/imgTelefone.svg">
+                <h1>(48) 91234-5678</h1>
+            </div>
+
+            <div class="whatsapp">
+                <img src="/imagens/imgWhats.svg">
+                <h1>(48) 92345-6789</h1>
+            </div>
+
+            <div class="email">
+                <img src="/imagens/imgEmail.svg">
+                <h1>administracao@tempfy.com</h1>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
