@@ -11,3 +11,11 @@ CREATE TABLE IF NOT EXISTS Clientes(
 -- COMANDO UTILIZADO PARA CONSULTA DA TABELA DURANTE A CRIAÇÃO DO PROJETO --
 
 SELECT * FROM Clientes;
+
+-- ESPECIFICAÇÕES DO BANCO DE DADOS UTILIZADO NA CRIAÇÃO DO PROJETO --
+
+user: 'postgres',
+host: 'localhost',
+database: 'tempfy',
+password: '1994',
+port: '5432',
