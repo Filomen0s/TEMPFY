@@ -47,3 +47,5 @@ app.delete('/delete/:id', async (req, res) => {
 app.listen(port);
 
 console.log("Backend rodando");
+
+app.listen(3000, () => console.log('🚀 Servidor rodando na porta 3000'));

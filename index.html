@@ -26,7 +26,7 @@
     <title>TEMPFY</title>
 
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +41,25 @@
             <h1 onclick="irParaContato()">Contato</h1>
         </div>
 
-        <img onclick="login()" class="perfil" src="/imagens/iconePerfil.svg">
+        <img id="botaoPerfil" class="perfil" src="/imagens/iconePerfil.svg">
+
+        <div id="modalConta" class="modalConta">
+            <p class="infoTitulo">Informações da sua conta: </p>
+
+            <div id="infoConta" class="infoConta">
+                <p id="nome"></p>
+                <p id="email"></p>
+                <p id="senha"></p>
+
+                <button id="logout">Logout</button>
+            </div>
+
+            <div id="entreNaConta" class="entreNaConta">
+                <h1>Entre na sua conta!</h1>
+                <button id="login">Login</button>
+            </div>
+        </div>
+
     </section>
 
     <section class="inicio">
