@@ -1,52 +1,56 @@
-const { Pool } = require("pg");
+const { Pool } = require('pg')
+
 const pool = new Pool({
-    port: process.env.DB_PORT,
-    password: process.env.PASSWORD,
-    host: process.env.HOST,
-    user: process.env.USER,
-    database: process.env.DATABASE
+    user: 'postgres',
+    host: 'localhost',
+    database: 'tempfy',
+    password: '1994',
+    port: '5432',
 });
 
 pool.connect()
-    .then(() => console.log("Conectado ao banco de dados"))
-    .catch((err) => console.error("Erro ao conectar ao banco de dados", err));
+    .then(() => console.log('Conexão com o banco bem sucedida! ✅'))
+    .catch(err => console.error('Falha na conexão com o banco de dados! ❌'))
 
 
-async function selectCustumers() {
+
+const cors = require('cors');
+const express = require('express');
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+
+
+app.post('/insert', async (req, res) => {
     const client = await pool.connect();
-    const res = await client.query("SELECT * FROM Clientes");
-    return res.rows;
-}
+    const sql = await client.query('INSERT INTO Clientes(usuarios, email, senha) VALUES ($1, $2, $3)', [req.body.usuarios, req.body.email, req.body.senha]);
 
-async function selectCustumer(usuarios) {
+    res.json(sql.rows)
+});
+
+app.get('/select/:usuarios', async (req, res) => {
     const client = await pool.connect();
-    const res = await client.query("SELECT * FROM Clientes WHERE usuarios=$1", [usuarios]);
-    return res.rows;
-}
+    const sql = await client.query('SELECT * FROM Clientes WHERE usuarios=$1', [req.params.usuarios])
 
-async function insertCustomer(custumer) {
+    res.json(sql.rows)
+});
+
+app.patch('/update/:id', async (req, res) => {
+
     const client = await pool.connect();
-    const sql = "INSERT INTO Clientes(usuarios, email, senha) VALUES ($1, $2, $3)";
-    await client.query(sql, [custumer.usuarios, custumer.email, custumer.senha]) //Não precisa ter retorno
-}
+    const sql = await client.query('UPDATE Clientes SET usurarios=$1 email=$2 senha=$3 WHERE id=$4', [req.params.usurarios, req.params.email, req.params.senha, req.params.id])
 
-async function updanteCustomer(id, custumer) {
+    res.json(sql.rows)
+});
+
+app.delete('/delete/:usuarios', async (req, res) => {
+
     const client = await pool.connect();
-    const sql = "UPDATE Clientes SET usurarios=$1 email=$2 senha=$3 WHERE id=$4";
-    await client.query(sql, [custumer.usurarios, custumer.email, custumer.senha, id]) //Não precisa ter retorno
-}
+    const sql = await client.query('DELETE FROM Clientes WHERE usuarios=$1', [req.params.usuarios])
 
-async function deleteCustomer(usuarios) {
-    const client = await pool.connect();
-    const sql = "DELETE FROM Clientes WHERE usuarios=$1";
-    await client.query(sql, [usuarios]) //Não precisa ter retorno
-}
+    res.sendStatus(sql.rows);
+});
 
-module.exports = {
-    selectCustumers,
-    selectCustumer,
-    insertCustomer,
-    updanteCustomer,
-    deleteCustomer
-}
-
+app.listen(3000, () => console.log('🚀 Servidor rodando na porta 3000'));
